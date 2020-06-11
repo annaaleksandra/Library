@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Anna's Bookshelf</h1>
+            
+            <form action = "" method="get" class="form">
+                <h2>Add a New Book to the Shelf</h2>
+                <div class="form" id="bookForm">
+                <label for="title">Enter the title</label><br>
+                <input type="text" name="title" id="title" placeholder="Hobbit" required>
+                </div>
+                <div class="form">
+                    <label for="title">Enter the author</label><br>
+                    <input type="text" name="author" id="author" placeholder="J.R.R Tolkien" required>
+                </div>
+                <div class="form">
+                    <label for="pages">Enter the number of pages</label><br>
+                    <input type="number" name="pages" id="pages" required>
+                </div>
+                <button id="button" type="submit">Add to the Bookshelf</button>
+            </form>
+            
+        
+            <div id="bookshelf">
+            </div>
+            <div id="shelf"></div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
